@@ -73,7 +73,7 @@ output= ""
     puts "#{cap_season}:"
     holiday.each do |holiday,supplies|
       string_holiday= holiday.to_s
-      split_string=string_holiday.split.map(capitalize).join(' ')
+      split_string=string_holiday.split.map(&:capitalize).join(' ')
       # cap_holiday = clean_holiday.capitalize
       supplies_str=supplies.join(", ")
       puts "  #{split_string}: #{supplies_str}"
