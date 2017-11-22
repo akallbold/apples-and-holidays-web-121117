@@ -74,13 +74,14 @@ output= ""
     holiday.each do |holiday,supplies|
 
       cap_holiday=holiday.capitalize
-        counter=0
-        while counter<cap_holiday.length
-          # binding.pry
-          if cap_holiday[counter] == "_"
-            cap_holiday[counter] = " "
-          end
-          counter+=1
+        cap_holiday.gsub!("_"," ")
+        # counter=0
+        # while counter<cap_holiday.length
+        #   # binding.pry
+        #   if cap_holiday[counter] == "_"
+        #     cap_holiday[counter] = " "
+        #   end
+        #   counter+=1
         end
       supplies_str=supplies.join(", ")
       puts "  #{cap_holiday}: #{supplies_str}"
