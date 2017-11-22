@@ -73,7 +73,7 @@ output= ""
     puts "#{cap_season}:"
     holiday.each do |holiday,supplies|
       string_holiday= holiday.to_s
-      clean_holiday= string_holiday.sub("_"," ").
+      clean_holiday= string_holiday.sub("_"," ")
       cap_holiday = clean_holiday.capitalize
         # counter=0
         # while counter<cap_holiday.length
