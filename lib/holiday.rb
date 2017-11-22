@@ -75,20 +75,11 @@ output= ""
       string_holiday= holiday.to_s
       clean_holiday= string_holiday.sub("_"," ")
       cap_holiday = clean_holiday.capitalize
-        # counter=0
-        # while counter<cap_holiday.length
-        #   # binding.pry
-        #   if cap_holiday[counter] == "_"
-        #     cap_holiday[counter] = " "
-        #   end
-        #   counter+=1
-              supplies_str=supplies.join(", ")
-                    puts "  #{cap_holiday}: #{supplies_str}"
-    end
-
-
+      supplies_str=supplies.join(", ")
+      puts "  #{cap_holiday}: #{supplies_str}"
     end
   end
+end
 
 
 
