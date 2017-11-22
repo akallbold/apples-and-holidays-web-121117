@@ -74,7 +74,7 @@ output= ""
     holiday.each do |holiday,supplies|
       string_holiday = holiday.to_s
       split_string = string_holiday.split("_")
-      capital_string = split_string.map {|x| x.capitalize)}
+      capital_string = split_string.map do |x| x.capitalize end
       cap_holiday = capital_string.join(" ")
       # cap_holiday = clean_holiday.capitalize
       supplies_str=supplies.join(", ")
