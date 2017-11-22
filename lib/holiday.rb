@@ -81,12 +81,12 @@ output= ""
         #     cap_holiday[counter] = " "
         #   end
         #   counter+=1
-        end
+    end
       supplies_str=supplies.join(", ")
       puts "  #{cap_holiday}: #{supplies_str}"
     end
   end
-end
+
 
 
 def all_holidays_with_bbq(holiday_hash)
