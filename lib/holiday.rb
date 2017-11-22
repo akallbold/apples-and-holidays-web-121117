@@ -75,14 +75,13 @@ output= ""
 
       cap_holiday=holiday.capitalize
         counter=0
-        while counter<cap_holiday.size
+        while counter<cap_holiday.length
           if cap_holiday[counter] == "_"
             cap_holiday[counter] = " "
             counter+=1
           end
         end
       supplies_str=supplies.join(", ")
-
       puts "  #{cap_holiday}: #{supplies_str}"
     end
   end
