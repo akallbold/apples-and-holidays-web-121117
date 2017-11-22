@@ -79,8 +79,8 @@ output= ""
           binding.pry
           if cap_holiday[counter] == "_"
             cap_holiday[counter] = " "
-            counter+=1
           end
+          counter+=1
         end
       supplies_str=supplies.join(", ")
       puts "  #{cap_holiday}: #{supplies_str}"
