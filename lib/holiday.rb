@@ -83,9 +83,10 @@ output= ""
         #   end
         #   counter+=1
               supplies_str=supplies.join(", ")
+                    puts "  #{cap_holiday}: #{supplies_str}"
     end
 
-      puts "  #{cap_holiday}: #{supplies_str}"
+
     end
   end
 
