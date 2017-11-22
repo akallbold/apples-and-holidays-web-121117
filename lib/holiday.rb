@@ -76,7 +76,7 @@ output= ""
       cap_holiday=holiday.capitalize
         counter=0
         while counter<cap_holiday.length
-          binding.pry
+          # binding.pry
           if cap_holiday[counter] == "_"
             cap_holiday[counter] = " "
           end
